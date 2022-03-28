@@ -1,0 +1,18 @@
+h1 {
+  font-size: 2em;
+  transition: all 0.3s;
+  color: blue;
+
+  &:hover {
+    transform: translateX(50px);
+    color: red;
+  }
+}
+
+.bg {
+  // css内でaliasを参照する際はプレフィックスにチルダを付与する
+  background-image: url("~@imgs/webpack-logo.svg");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}

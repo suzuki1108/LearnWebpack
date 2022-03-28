@@ -1,0 +1,40 @@
+{
+  "scripts": {
+    "cleanup": "npx rimraf ./public",
+    "dev": "npm run webpack:dev && npm run webpack:server",
+    "webpack:server": "npx webpack-dev-server --config ./webpack.dev.js",
+    "webpack:dev": "npm run cleanup && npx webpack --config ./webpack.dev.js",
+    "build": "npm run cleanup && npx webpack --config ./webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.12.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "postcss": "^8.4.12",
+    "postcss-loader": "^6.2.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.17.0",
+    "core-js": "3",
+    "jquery": "^3.6.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
